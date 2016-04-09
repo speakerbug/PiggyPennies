@@ -73,7 +73,7 @@
               <h3>General</h3>
               <ul class="nav side-menu">
                 <li><a href="index.php"><i class="fa fa-home"></i> Home </span></a></li>
-                <li><a><i class="fa fa-money"></i> My PiggyBanks <span class="fa fa-chevron-down"></span></a>
+                <li><a><i class="fa fa-money"></i> PiggyBanks <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu" style="display: none">
                     <li><a href="canada.php">Canada Trip</a>
                     </li>
