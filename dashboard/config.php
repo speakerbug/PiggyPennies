@@ -1,8 +1,8 @@
 <?php
 
-$api_key = getenv('API_KEY');
-$henry = getenv('ID_HENRY');
-$sneha = getenv('ID_SNEHA');
-$stuart = getenv('ID_STUART');
+$api_key = $_ENV['API_KEY'];
+$henry = $_ENV['ID_HENRY'];
+$sneha = $_ENV['ID_SNEHA'];
+$stuart = $_ENV['ID_STUART'];
 
 ?>
