@@ -148,7 +148,7 @@
                             </thead>
                             <tbody>
                               <?php
-                                for ($i = 0; $i < count($statment); $i++) {
+                                for ($i = 0; $i < count($statement); $i++) {
                                     
                                     $merchant = $statement[$i]['merchant_id'];
                                     $amount = $statement[$i]['amount'];
