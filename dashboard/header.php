@@ -48,7 +48,7 @@
         <div class="left_col scroll-view">
 
           <div class="navbar nav_title" style="border: 0;">
-            <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>PiggyPennies</span></a>
+            <a href="index.html" class="site_title"><img src="https://s3-us-west-2.amazonaws.com/piggypennies/images/small_logo.png"> <span>PiggyPennies</span></a>
           </div>
           <div class="clearfix"></div>
 
