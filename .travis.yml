@@ -1,0 +1,10 @@
+language: php
+script: nosetests
+before_deploy:
+  - echo -e "Host aws-cloud.oweb.co\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+deploy:
+  - provider: script
+    script: .travis/deploy_prod.sh
+    on:
+      branch: master
+      repo: speakerbug/PiggyPennies
