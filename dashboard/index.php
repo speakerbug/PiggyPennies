@@ -127,6 +127,7 @@
 
                             
                             <?php 
+                            $lifetime_savings = 0;
                             $statement = file_get_contents("http://api.reimaginebanking.com/accounts/$henry/purchases?key=$api_key");
                             $statement = json_decode($statement, true);
                             ?>
@@ -148,6 +149,7 @@
                                     $amount = $statement[$i]['amount'];
                                     $rounded = ceil($statement[$i]['amount']);
                                     $round = $rounded-$amount;
+                                    $lifetime_savings += $round;
                                     $amount = money_format('$%i', $amount);
                                     $round = money_format('$%i', $round);
                                     
@@ -165,6 +167,12 @@
                             </tbody>
                           </table>
                           <!-- end user projects -->
+                      
+                      <div class="profile_title">
+                      <div class="col-md-6">
+                        <h2>Lifetime Total Savings: +<?php echo money_format('$%i', $lifetime_savings); ?></h2>
+                      </div>
+                    </div>
 
                         </div>
                        
