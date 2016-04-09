@@ -134,6 +134,7 @@
                             
                             <?php 
                             $statement = file_get_contents("http://api.reimaginebanking.com/accounts/$henry/purchases?key=$api_key");
+                            echo "http://api.reimaginebanking.com/accounts/$henry/purchases?key=$api_key";
                             echo $statement;
                             ?>
                             
