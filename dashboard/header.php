@@ -55,11 +55,11 @@
           <!-- menu prile quick info -->
           <div class="profile">
             <div class="profile_pic">
-              <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              <img src="https://s3-us-west-2.amazonaws.com/piggypennies/images/henry.jpg" alt="..." class="img-circle profile_img">
             </div>
             <div class="profile_info">
               <span>Welcome,</span>
-              <h2>John Doe</h2>
+              <h2>Henry Saniuk</h2>
             </div>
           </div>
           <!-- /menu prile quick info -->

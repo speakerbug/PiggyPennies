@@ -49,7 +49,7 @@
 					<li><a href="#intro">Intro</a></li>
 					<li><a href="#services">Services</a></li>
 					<li><a href="#team">Team</a></li>
-					<li><a href="dashboard/index.html" class="btn btn-blue">Dashboard</a></li>
+					<li><a href="dashboard/index.php" class="btn btn-blue">Dashboard</a></li>
 				</ul>
 			</div>
 			<!-- /.navbar-collapse -->
