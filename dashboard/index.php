@@ -4,22 +4,7 @@
       <div class="right_col" role="main">
 
         <div class="">
-          <div class="page-title">
-            <div class="title_left">
-              <h3>User Profile</h3>
-            </div>
 
-            <div class="title_right">
-              <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Search for...">
-                  <span class="input-group-btn">
-                            <button class="btn btn-default" type="button">Go!</button>
-                        </span>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="clearfix"></div>
 
           <div class="row">
@@ -125,10 +110,10 @@
                       <!-- end of image cropping -->
 
                     </div>
-                    <h3>Samuel Doe</h3>
+                    <h3>Henry Saniuk</h3>
 
                     <ul class="list-unstyled user_data">
-                      <li><i class="fa fa-map-marker user-profile-icon"></i> San Francisco, California, USA
+                      <li><i class="fa fa-map-marker user-profile-icon"></i> Rochester, New York, USA
                       </li>
 
                       <li>
@@ -137,60 +122,21 @@
 
                       <li class="m-top-xs">
                         <i class="fa fa-external-link user-profile-icon"></i>
-                        <a href="http://www.kimlabs.com/profile/" target="_blank">www.kimlabs.com</a>
+                        <a href="http://henrysaniuk.com" target="_blank">www.henrysaniuk.com</a>
                       </li>
                     </ul>
 
                     <a class="btn btn-success"><i class="fa fa-edit m-right-xs"></i>Edit Profile</a>
                     <br />
 
-                    <!-- start skills -->
-                    <h4>Skills</h4>
-                    <ul class="list-unstyled user_data">
-                      <li>
-                        <p>Web Applications</p>
-                        <div class="progress progress_sm">
-                          <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50"></div>
-                        </div>
-                      </li>
-                      <li>
-                        <p>Website Design</p>
-                        <div class="progress progress_sm">
-                          <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="70"></div>
-                        </div>
-                      </li>
-                      <li>
-                        <p>Automation & Testing</p>
-                        <div class="progress progress_sm">
-                          <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="30"></div>
-                        </div>
-                      </li>
-                      <li>
-                        <p>UI / UX</p>
-                        <div class="progress progress_sm">
-                          <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50"></div>
-                        </div>
-                      </li>
-                    </ul>
-                    <!-- end of skills -->
-
                   </div>
                   <div class="col-md-9 col-sm-9 col-xs-12">
 
                     <div class="profile_title">
                       <div class="col-md-6">
-                        <h2>User Activity Report</h2>
-                      </div>
-                      <div class="col-md-6">
-                        <div id="reportrange" class="pull-right" style="margin-top: 5px; background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #E6E9ED">
-                          <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
-                          <span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
-                        </div>
+                        <h2>Savings Report</h2>
                       </div>
                     </div>
-                    <!-- start of user-activity-graph -->
-                    <div id="graph_bar" style="width:100%; height:280px;"></div>
-                    <!-- end of user-activity-graph -->
 
                     <div class="" role="tabpanel" data-example-id="togglable-tabs">
                       <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
