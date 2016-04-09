@@ -170,7 +170,7 @@
                       
                       <div class="profile_title">
                       <div class="col-md-6">
-                        <h2>Lifetime Total Savings: +<?php echo money_format('$%i', $lifetime_savings); ?></h2>
+                        <h2>Lifetime Total Savings: <strong>+<?php echo money_format('$%i', $lifetime_savings); ?></strong></h2>
                       </div>
                     </div>
 

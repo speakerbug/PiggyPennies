@@ -41,13 +41,13 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#"><img src="img/logo.png" data-active-url="img/logo-active.png" alt=""></a>
+				<a class="navbar-brand" href="#"><img width="40" src="https://s3-us-west-2.amazonaws.com/piggypennies/images/small_logo.png" data-active-url="https://s3-us-west-2.amazonaws.com/piggypennies/images/small_logo.png" alt=""></a>
 			</div>
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right main-nav">
 					<li><a href="#intro">Intro</a></li>
-					<li><a href="#services">Services</a></li>
+					<li><a href="#services">How it Works</a></li>
 					<li><a href="#team">Team</a></li>
 					<li><a href="dashboard/index.php" class="btn btn-blue">Dashboard</a></li>
 				</ul>
@@ -195,8 +195,8 @@
 	<section id="services" class="section section-padded">
 		<div class="container">
 			<div class="row text-center title">
-				<h2>Services</h2>
-				<h4 class="light muted">Achieve the best results with our wide variety of training options!</h4>
+				<h2>How it Works</h2>
+				<h4 class="light muted">We automatically round up all your purchases to the nearest dollar to help you save for something fun.</h4>
 			</div>
 			<div class="row services">
 				<div class="col-md-4">
@@ -204,8 +204,8 @@
 						<div class="icon-holder">
 							<img src="img/icons/heart-blue.png" alt="" class="icon">
 						</div>
-						<h4 class="heading">Cardio Training</h4>
-						<p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
+						<h4 class="heading">Open a PiggyBank</h4>
+						<p class="description">Saving for a new TV for the apartment or planning on taking a trip with friends to Canada next month? Create a new PiggyBank for whatever you want and save together.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -213,8 +213,8 @@
 						<div class="icon-holder">
 							<img src="img/icons/guru-blue.png" alt="" class="icon">
 						</div>
-						<h4 class="heading">Yoga Pilates</h4>
-						<p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
+						<h4 class="heading">Make a Purchase</h4>
+						<p class="description">Make purchases as you normally would using your Capital One card and we will automatically round up your purchases to the nearest dollar.</p>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -222,8 +222,8 @@
 						<div class="icon-holder">
 							<img src="img/icons/weight-blue.png" alt="" class="icon">
 						</div>
-						<h4 class="heading">Power Training</h4>
-						<p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
+						<h4 class="heading">Have Fun</h4>
+						<p class="description">Once you've all reached your individual goals, cash out and go have some fun. We know you deserve it.</p>
 					</div>
 				</div>
 			</div>
