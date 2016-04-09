@@ -134,8 +134,7 @@
                             
                             <?php 
                             $statement = file_get_contents("http://api.reimaginebanking.com/accounts/$henry/purchases?key=$api_key");
-                            echo "http://api.reimaginebanking.com/accounts/$henry/purchases?key=$api_key";
-                            echo $statement;
+                            $statement = json_decode($statement, true);
                             ?>
                             
                            <!-- start user projects -->
@@ -144,15 +143,27 @@
                               <tr>
                                 <th>Merchant</th>
                                 <th>Price</th>
-                                <th>Rounded Addition</th>
+                                <th>Rounded Amount</th>
                               </tr>
                             </thead>
                             <tbody>
-                              <tr>
-                                <td>1</td>
-                                <td>New Company Takeover Review</td>
-                                <td>Deveint Inc</td>
-                              </tr>
+                              <?php
+                                for ($i = 0; $i < count($statment); $i++) {
+                                    
+                                    $merchant = $statement[$i]['merchant_id'];
+                                    $amount = $statement[$i]['amount'];
+                                    $rounded = ceil($statement[$i]['amount']);
+                                    $round = $rounded-$amount;
+                                    $amount = money_format('$%i', $amount);
+                                    $round = money_format('$%i', $round);
+                                    
+                                    echo "<tr>";
+                                    echo "<td>$merchant</td>";
+                                    echo "<td>$price</td>";
+                                    echo "<td>$round</td>";
+                                    echo "</tr>";
+                                }
+                                ?>
                             </tbody>
                           </table>
                           <!-- end user projects -->
