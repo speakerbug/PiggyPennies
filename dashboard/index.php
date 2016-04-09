@@ -157,9 +157,14 @@
                                     $amount = money_format('$%i', $amount);
                                     $round = money_format('$%i', $round);
                                     
+                                    $merchant_info = file_get_contents("http://api.reimaginebanking.com/merchants/$merchant?key=$api_key");
+                                    $merchant_info = json_decode($merchant_info, true);
+                                    
+                                    $merchant = $merchant_info['name'];
+                                    
                                     echo "<tr>";
                                     echo "<td>$merchant</td>";
-                                    echo "<td>$price</td>";
+                                    echo "<td>$amount</td>";
                                     echo "<td>$round</td>";
                                     echo "</tr>";
                                 }
