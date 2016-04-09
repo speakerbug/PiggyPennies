@@ -54,7 +54,7 @@
                       <div id="crop-avatar">
                         <!-- Current avatar -->
                         <div class="avatar-view" title="Change the avatar">
-                          <img src="images/picture.jpg" alt="Avatar">
+                          <img src="https://s3-us-west-2.amazonaws.com/piggypennies/images/henry-big.jpg" alt="Avatar">
                         </div>
 
                         <!-- Cropping modal -->
