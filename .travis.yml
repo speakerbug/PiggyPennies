@@ -1,5 +1,6 @@
 language: php
-script: nosetests
+script:
+  - test -f index.php
 before_deploy:
   - echo -e "Host aws-cloud.oweb.co\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 deploy:
