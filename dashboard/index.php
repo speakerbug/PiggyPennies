@@ -119,17 +119,11 @@
                       </div>
                     </div>
 
-                    <div class="" role="tabpanel" data-example-id="togglable-tabs">
-                      <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
-                        <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">Recent Activity</a>
-                        </li>
-                        <li role="presentation" class=""><a href="#tab_content2" role="tab" id="profile-tab" data-toggle="tab" aria-expanded="false">Projects Worked on</a>
-                        </li>
-                        <li role="presentation" class=""><a href="#tab_content3" role="tab" id="profile-tab2" data-toggle="tab" aria-expanded="false">Profile</a>
-                        </li>
-                      </ul>
-                      <div id="myTabContent" class="tab-content">
-                        <div role="tabpanel" class="tab-pane fade active in" id="tab_content1" aria-labelledby="home-tab">
+                    <div class="profile_title">
+                      <div class="col-md-6">
+                        <h2>Recent Activity</h2>
+                      </div>
+                    </div>
 
                             
                             <?php 
@@ -143,7 +137,7 @@
                               <tr>
                                 <th>Merchant</th>
                                 <th>Price</th>
-                                <th>Rounded Amount</th>
+                                <th>Savings</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -157,15 +151,10 @@
                                     $amount = money_format('$%i', $amount);
                                     $round = money_format('$%i', $round);
                                     
-                                    $merchant_info = file_get_contents("http://api.reimaginebanking.com/merchants/$merchant?key=$api_key");
-                                    $merchant_info = json_decode($merchant_info, true);
-                                    
-                                    $merchant = $merchant_info['name'];
-                                    
                                     echo "<tr>";
                                     echo "<td>$merchant</td>";
-                                    echo "<td>$amount</td>";
-                                    echo "<td>$round</td>";
+                                    echo "<td>$price</td>";
+                                    echo "<td>+$round</td>";
                                     echo "</tr>";
                                 }
                                 ?>
@@ -174,73 +163,7 @@
                           <!-- end user projects -->
 
                         </div>
-                        <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
-
-                          <!-- start user projects -->
-                          <table class="data table table-striped no-margin">
-                            <thead>
-                              <tr>
-                                <th>#</th>
-                                <th>Project Name</th>
-                                <th>Client Company</th>
-                                <th class="hidden-phone">Hours Spent</th>
-                                <th>Contribution</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>1</td>
-                                <td>New Company Takeover Review</td>
-                                <td>Deveint Inc</td>
-                                <td class="hidden-phone">18</td>
-                                <td class="vertical-align-mid">
-                                  <div class="progress">
-                                    <div class="progress-bar progress-bar-success" data-transitiongoal="35"></div>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>2</td>
-                                <td>New Partner Contracts Consultanci</td>
-                                <td>Deveint Inc</td>
-                                <td class="hidden-phone">13</td>
-                                <td class="vertical-align-mid">
-                                  <div class="progress">
-                                    <div class="progress-bar progress-bar-danger" data-transitiongoal="15"></div>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>3</td>
-                                <td>Partners and Inverstors report</td>
-                                <td>Deveint Inc</td>
-                                <td class="hidden-phone">30</td>
-                                <td class="vertical-align-mid">
-                                  <div class="progress">
-                                    <div class="progress-bar progress-bar-success" data-transitiongoal="45"></div>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>4</td>
-                                <td>New Company Takeover Review</td>
-                                <td>Deveint Inc</td>
-                                <td class="hidden-phone">28</td>
-                                <td class="vertical-align-mid">
-                                  <div class="progress">
-                                    <div class="progress-bar progress-bar-success" data-transitiongoal="75"></div>
-                                  </div>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          <!-- end user projects -->
-
-                        </div>
-                        <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
-                          <p>xxFood truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui
-                            photo booth letterpress, commodo enim craft beer mlkshk </p>
-                        </div>
+                       
                       </div>
                     </div>
                   </div>
