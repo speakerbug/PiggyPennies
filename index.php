@@ -162,11 +162,11 @@
 				</div>
 				<div class="col-md-4">
 					<div class="intro-table intro-table-hover">
-						<h5 class="white heading hide-hover">Premium Membership</h5>
+						<h5 class="white heading hide-hover">Exclusive Membership</h5>
 						<div class="bottom">
-							<h4 class="white heading small-heading no-margin regular">Register Today</h4>
-							<h4 class="white heading small-pt">20% Discount</h4>
-							<a href="#" class="btn btn-white-fill expand">Register</a>
+							<h4 class="white heading small-heading no-margin regular">Capital One</h4>
+							<h4 class="white heading small-pt">Cardholders Only</h4>
+							<a href="dashboard/index.html" class="btn btn-white-fill expand">Login</a>
 						</div>
 					</div>
 				</div>

@@ -326,7 +326,7 @@ section {
 .intro-table-hover {
 	-webkit-transition: background-image 0.3s ease, background-position 0.3s;
 	transition: background-image 0.3s ease, background-position 0.3s;
-	background-image: url('../img/table-2.jpg');
+	background-image: url('../img/capitalone.png');
 }
 
 .intro-table-hover h4 {
@@ -337,7 +337,7 @@ section {
 }
 
 .intro-table-hover:hover {
-	background-image: url('../img/table-2-hover.jpg');
+	background-image: url('../img/capitalone-hover.png');
 	background-position: 50% 50%;
 }
 
