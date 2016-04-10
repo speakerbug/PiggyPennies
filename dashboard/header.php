@@ -113,12 +113,6 @@
             <a data-toggle="tooltip" data-placement="top" title="Logout">
               <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
             </a>
-               <a >
-              <span></span>
-            </a>
-               <a >
-              <span></span>
-            </a>
           </div>
           <!-- /menu footer buttons -->
         </div>
