@@ -42,10 +42,6 @@
             $.get("http://piggy.aws-cloud.oweb.co/hooks/transaction.php", function (data, status) {
                 alert("Transaction made");
                 });
-            
-            $.get("http://piggy.aws-cloud.oweb.co/hooks/transaction.php", function (data, status) {
-                alert("Transaction made");
-                });
         }
     </script>
 
