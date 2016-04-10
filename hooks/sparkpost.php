@@ -57,13 +57,16 @@ function send_response($message) {
       "campaign_id" => "postman_metadata_example",
       "recipients" => [
         [
-          "address" => $to,
+          "address" => [
+            'name' => 'Stuart',
+            'email' => $to,
+          ],
           "metadata" => [
             "unique_id" => 424242
           ],
           "substitution_data" => [
             "name" => "Stuart",
-            "amount" => "$33",
+            "amount" => $amount,
             "goal" => "$500"
           ]
         ]
