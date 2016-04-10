@@ -53,9 +53,9 @@
             $.get("http://api.reimaginebanking.com/atms?lat=" + position.coords.latitude + "&lng=" + position.coords.longitude + "&rad=25&key=c50e2ab66da1e818d92a5884067a17ef", function (data, status) {
                 alert("Data: " + data + "\nStatus: " + status);
                 x.innerHTML = "<h2>ATMs Near Me</h2>";
-                for (var i = 0; i < data.length; i++) {
-                    var obj = data[i];
-                    x.innerHTML += "<br><strong>" + data[i]['name'] + "</strong><br>";
+                for (var i = 0; i < data.data.length; i++) {
+                    var obj = data.data[i];
+                    x.innerHTML += "<br><strong>" + obj['name'] + "</strong><br>";
                 }
             });
         }
