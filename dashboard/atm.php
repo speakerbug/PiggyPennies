@@ -37,6 +37,7 @@
         var y = document.getElementById("button");
 
         function getLocation() {
+            x.innerHTML = "<i class='fa fa-refresh fa-spin'></i>";
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(showPosition);
             } else {
@@ -47,7 +48,6 @@
         }
 
         function showPosition(position) {
-            x.innerHTML = "<i class='fa fa-refresh fa-spin'></i>";
             $.get("http://api.reimaginebanking.com/atms?lat=" + position.coords.latitude + "&lng=" + position.coords.longitude + "&rad=25&key=c50e2ab66da1e818d92a5884067a17ef", function(data, status){
         alert("Data: " + data + "\nStatus: " + status);
                  x.innerHTML = "Latitude: " + position.coords.latitude +
