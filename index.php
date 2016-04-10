@@ -46,7 +46,6 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right main-nav">
-					<li><a href="#intro">Intro</a></li>
 					<li><a href="#services">How it Works</a></li>
 					<li><a href="#team">Team</a></li>
 					<li><a href="dashboard/index.php" class="btn btn-blue">Dashboard</a></li>
@@ -71,127 +70,6 @@
 			</div>
 		</div>
 	</header>
-	<section>
-		<div class="cut cut-top"></div>
-		<div class="container">
-			<div class="row intro-tables">
-				<div class="col-md-4">
-					<div class="intro-table intro-table-first">
-						<h5 class="white heading">Today's Schedule</h5>
-						<div class="owl-carousel owl-schedule bottom">
-							<div class="item">
-								<div class="schedule-row row">
-									<div class="col-xs-6">
-										<h5 class="regular white">Early Exercise</h5>
-									</div>
-									<div class="col-xs-6 text-right">
-										<h5 class="white">8:30 - 10:00</h5>
-									</div>
-								</div>
-								<div class="schedule-row row">
-									<div class="col-xs-6">
-										<h5 class="regular white">Muscle Building</h5>
-									</div>
-									<div class="col-xs-6 text-right">
-										<h5 class="white">8:30 - 10:00</h5>
-									</div>
-								</div>
-								<div class="schedule-row row">
-									<div class="col-xs-6">
-										<h5 class="regular white">Cardio</h5>
-									</div>
-									<div class="col-xs-6 text-right">
-										<h5 class="white">8:30 - 10:00</h5>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="schedule-row row">
-									<div class="col-xs-6">
-										<h5 class="regular white">Early Exercise</h5>
-									</div>
-									<div class="col-xs-6 text-right">
-										<h5 class="white">8:30 - 10:00</h5>
-									</div>
-								</div>
-								<div class="schedule-row row">
-									<div class="col-xs-6">
-										<h5 class="regular white">Muscle Building</h5>
-									</div>
-									<div class="col-xs-6 text-right">
-										<h5 class="white">8:30 - 10:00</h5>
-									</div>
-								</div>
-								<div class="schedule-row row">
-									<div class="col-xs-6">
-										<h5 class="regular white">Cardio</h5>
-									</div>
-									<div class="col-xs-6 text-right">
-										<h5 class="white">8:30 - 10:00</h5>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="schedule-row row">
-									<div class="col-xs-6">
-										<h5 class="regular white">Early Exercise</h5>
-									</div>
-									<div class="col-xs-6 text-right">
-										<h5 class="white">8:30 - 10:00</h5>
-									</div>
-								</div>
-								<div class="schedule-row row">
-									<div class="col-xs-6">
-										<h5 class="regular white">Muscle Building</h5>
-									</div>
-									<div class="col-xs-6 text-right">
-										<h5 class="white">8:30 - 10:00</h5>
-									</div>
-								</div>
-								<div class="schedule-row row">
-									<div class="col-xs-6">
-										<h5 class="regular white">Cardio</h5>
-									</div>
-									<div class="col-xs-6 text-right">
-										<h5 class="white">8:30 - 10:00</h5>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="intro-table intro-table-hover">
-						<h5 class="white heading hide-hover">Exclusive Membership</h5>
-						<div class="bottom">
-							<h4 class="white heading small-heading no-margin regular">Capital One</h4>
-							<h4 class="white heading small-pt">Cardholders Only</h4>
-							<a href="dashboard/index.html" class="btn btn-white-fill expand">Login</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="intro-table intro-table-third">
-						<h5 class="white heading">Happy Clients</h5>
-						<div class="owl-testimonials bottom">
-							<div class="item">
-								<h4 class="white heading content">I couldn't be more happy with the results!</h4>
-								<h5 class="white heading light author">Adam Jordan</h5>
-							</div>
-							<div class="item">
-								<h4 class="white heading content">I can't believe how much better I feel!</h4>
-								<h5 class="white heading light author">Greg Pardon</h5>
-							</div>
-							<div class="item">
-								<h4 class="white heading content">Incredible transformation and I feel so healthy!</h4>
-								<h5 class="white heading light author">Christina Goldman</h5>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 	<section id="services" class="section section-padded">
 		<div class="container">
 			<div class="row text-center title">
@@ -320,35 +198,15 @@
 	</div>
 	<footer>
 		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 text-center-mobile">
-					<h3 class="white">Reserve a Free Trial Class!</h3>
-					<h5 class="light regular light-white">Shape your body and improve your health.</h5>
-					<a href="#" class="btn btn-blue ripple trial-button">Start Free Trial</a>
-				</div>
-				<div class="col-sm-6 text-center-mobile">
-					<h3 class="white">Opening Hours <span class="open-blink"></span></h3>
-					<div class="row opening-hours">
-						<div class="col-sm-6 text-center-mobile">
-							<h5 class="light-white light">Mon - Fri</h5>
-							<h3 class="regular white">9:00 - 22:00</h3>
-						</div>
-						<div class="col-sm-6 text-center-mobile">
-							<h5 class="light-white light">Sat - Sun</h5>
-							<h3 class="regular white">10:00 - 18:00</h3>
-						</div>
-					</div>
-				</div>
-			</div>
 			<div class="row bottom-footer text-center-mobile">
 				<div class="col-sm-8">
-					<p>&copy; 2015 All Rights Reserved. Powered by <a href="http://www.phir.co/">PHIr</a> exclusively for <a href="http://tympanus.net/codrops/">Codrops</a></p>
+					<p>&copy; 2016 All Rights Reserved. Powered by <a href="http://www.capitalone.com/">Capital One</a>.</p>
 				</div>
 				<div class="col-sm-4 text-right text-center-mobile">
 					<ul class="social-footer">
-						<li><a href="http://www.facebook.com/pages/Codrops/159107397912"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="http://www.twitter.com/codrops"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="https://plus.google.com/101095823814290637419"><i class="fa fa-google-plus"></i></a></li>
+						<li><a href="http://www.facebook.com/speakerbug"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="http://www.twitter.com/speakerbug"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a></li>
 					</ul>
 				</div>
 			</div>
