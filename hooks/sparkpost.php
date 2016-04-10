@@ -71,9 +71,7 @@ function send_response($message) {
           ]
         ]
       ],
-      "content" => [
-        "template_id" => "piggy"
-      ]
+      "template" => "piggy"
     ]);
     echo 'Woohoo! You just sent your first mailing!';
   } catch (\Exception $err) {

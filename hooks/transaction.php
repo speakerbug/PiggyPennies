@@ -56,9 +56,7 @@ try {
         ]
       ]
     ],
-    "content" => [
-      "template_id" => "piggy-transaction"
-    ]
+    "template" => "piggy-transaction"
   ]);
   echo 'Woohoo! You just sent your first mailing!';
 } catch (\Exception $err) {
