@@ -107,7 +107,7 @@
                       </li>
                     </ul>
 
-                    <a class="btn btn-success"><i class="fa fa-edit m-right-xs"></i>Edit Profile</a>
+                    <a class="btn btn-success"><i class="fa fa-edit m-right-xs"></i> Edit Profile</a>
                     <br />
 
                   </div>
@@ -118,7 +118,7 @@
                         <h2>Recent Activity</h2>
                       </div>
                         <div class="col-md-2">
-                        <a class="btn btn-success pull-right"><i class="fa fa-edit m-right-xs"></i>Transfer to Savings</a>
+                        <a class="btn btn-success pull-right"><i class="fa fa-exchange m-right-xs"></i> Transfer to Savings</a>
                       </div>
                     </div>
 
