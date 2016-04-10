@@ -58,16 +58,16 @@ function send_response($message) {
       "recipients" => [
         [
           "address" => [
-            'name' => 'Stuart',
+            'name' => 'Henry',
             'email' => $to,
           ],
           "metadata" => [
             "unique_id" => 424242
           ],
           "substitution_data" => [
-            "name" => "Stuart",
+            "name" => "Henry",
             "amount" => $amount,
-            "goal" => "$500"
+            "goal" => "$150"
           ]
         ]
       ],
