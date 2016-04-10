@@ -35,6 +35,7 @@ function send_response($message) {
       'html'=>"<html><body><h1>Great job, {{name}}!</h1><p>You're now {{amount}} closer to your group's goal of {{goal}}! Keep up the good work!</p></body></html>",
       'text'=>"Great job, {{name}}! You're now {{amount}} closer to your group's goal of {{goal}}! Keep up the good work!",
       'substitutionData'=>['name'=>'Recipient', 'amount'=>'$20', 'goal'=>'$500'],
+      'inline_css'=> true,
       'subject'=> $subject,
       'recipients'=>[
         [
