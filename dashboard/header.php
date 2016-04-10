@@ -78,10 +78,6 @@
                   <ul class="nav child_menu" style="display: none">
                     <li><a href="canada.php">Canada Trip</a>
                     </li>
-                    <li><a href="tv.php">New Apt TV</a>
-                    </li>
-                    <li><a href="rent.php">May 2016 Rent</a>
-                    </li>
                   </ul>
                 </li>
                 <li><a href="friends.php"><i class="fa fa-users"></i> Friends </span></a></li>
