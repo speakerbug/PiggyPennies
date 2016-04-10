@@ -91,23 +91,9 @@
                       <!-- end of image cropping -->
 
                     </div>
-                    <h3>Henry Saniuk</h3>
+                    <h3>Canada Trip</h3>
 
-                    <ul class="list-unstyled user_data">
-                      <li><i class="fa fa-map-marker user-profile-icon"></i> Rochester, New York, USA
-                      </li>
-
-                      <li>
-                        <i class="fa fa-briefcase user-profile-icon"></i> Software Engineer
-                      </li>
-
-                      <li class="m-top-xs">
-                        <i class="fa fa-external-link user-profile-icon"></i>
-                        <a href="http://henrysaniuk.com" target="_blank">henrysaniuk.com</a>
-                      </li>
-                    </ul>
-
-                    <a class="btn btn-success"><i class="fa fa-edit m-right-xs"></i>Edit Profile</a>
+                    <a class="btn btn-success"><i class="fa fa-edit m-right-xs"></i>Edit PiggyBank</a>
                     <br />
 
                   </div>
