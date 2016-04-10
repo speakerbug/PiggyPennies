@@ -30,20 +30,39 @@ function send_response($message) {
 
   try {
     // Build your email and send it!
+    // $results = $sparky->transmission->send([
+    //   'from'=>'PiggyPennies <hello@piggy.aws-cloud.oweb.co>',
+    //   'html'=>"<html><body><h1>Great job, {{name}}!</h1><p>You're now {{amount}} closer to your group's goal of {{goal}}! Keep up the good work!</p></body></html>",
+    //   'text'=>"Great job, {{name}}! You're now {{amount}} closer to your group's goal of {{goal}}! Keep up the good work!",
+    //   'substitutionData'=>['name'=>'Recipient', 'amount'=>'$20', 'goal'=>'$500'],
+    //   'inline_css'=> true,
+    //   'subject'=> $subject,
+    //   'recipients'=>[
+    //     [
+    //       'address'=>[
+    //         'name'=>'Recipient',
+    //         'email'=> $to
+    //       ]
+    //     ]
+    //   ]
+    // ]);
     $results = $sparky->transmission->send([
-      'from'=>'PiggyPennies <hello@piggy.aws-cloud.oweb.co>',
-      'html'=>"<html><body><h1>Great job, {{name}}!</h1><p>You're now {{amount}} closer to your group's goal of {{goal}}! Keep up the good work!</p></body></html>",
-      'text'=>"Great job, {{name}}! You're now {{amount}} closer to your group's goal of {{goal}}! Keep up the good work!",
-      'substitutionData'=>['name'=>'Recipient', 'amount'=>'$20', 'goal'=>'$500'],
-      'inline_css'=> true,
-      'subject'=> $subject,
-      'recipients'=>[
+      "campaign_id" => "postman_metadata_example",
+      "recipients" => [
         [
-          'address'=>[
-            'name'=>'Recipient',
-            'email'=> $to
+          "address" => $to,
+          "metadata" => [
+            "unique_id" => 424242
+          ],
+          "substitution_data" => [
+            "name" => "Stuart",
+            "amount" => "$20",
+            "goal" => "$500"
           ]
         ]
+      ],
+      "content" => [
+        "template_id" => "piggy"
       ]
     ]);
     echo 'Woohoo! You just sent your first mailing!';
