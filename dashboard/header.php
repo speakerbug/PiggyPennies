@@ -99,7 +99,6 @@
                 </li>
                 <li><a href="friends.php"><i class="fa fa-users"></i> Friends </span></a></li>
           <li><a href="atm.php"><i class="fa fa-credit-card"></i> ATM Finder </span></a></li>
-      <li><img src="https://s3-us-west-2.amazonaws.com/piggypennies/images/poweredby.png" width="75%"></li>
               </ul>
             </div>
 
@@ -129,6 +128,7 @@
             </div>
 
             <ul class="nav navbar-nav navbar-right">
+                <li><img src="https://s3-us-west-2.amazonaws.com/piggypennies/images/poweredby.png" height="50"></li>
               <li class="">
                 <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                   <img src="https://s3-us-west-2.amazonaws.com/piggypennies/images/henry.jpg" alt="">Henry
