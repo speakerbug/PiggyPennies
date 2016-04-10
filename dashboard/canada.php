@@ -92,6 +92,14 @@
 
                     </div>
                     <h3>Canada Trip</h3>
+                      
+                      <ul class="list-unstyled user_data">
+                                    <li><strong>Total:</strong> $150.00
+                                    </li>
+                                    <li>
+                                        <strong>I owe:</strong> $50.00
+                                    </li>
+                                </ul>
 
                     <a class="btn btn-success"><i class="fa fa-edit m-right-xs"></i>Edit PiggyBank</a>
                     <br />
