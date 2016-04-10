@@ -172,6 +172,12 @@
                           </table>
                           <!-- end user projects -->
                             
+                            <div class="profile_title">
+                      <div class="col-md-6">
+                        <h2>My Total Contributions: <strong>+<?php echo money_format('$%i', $lifetime_savings); ?></strong></h2>
+                      </div>
+                    </div>
+                            
                             </div>
                         <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
                          
@@ -186,6 +192,7 @@
                             </thead>
                             <tbody>
                               <?php
+                                $lifetime_savings = 0;
                                 $statement = file_get_contents("http://api.reimaginebanking.com/accounts/$sneha/purchases?key=$api_key");
                                 $statement = json_decode($statement, true);
                                 for ($i = count($statement)-1; $i >= 0; $i--) {
@@ -235,14 +242,13 @@
                           </table>
                           <!-- end user projects -->
                             
-                            
-                        </div>
-                      
-                      <div class="profile_title">
+                            <div class="profile_title">
                       <div class="col-md-6">
-                        <h2>Lifetime Total Savings: <strong>+<?php echo money_format('$%i', $lifetime_savings); ?></strong></h2>
+                        <h2>Friends' Total Contributions: <strong>+<?php echo money_format('$%i', $lifetime_savings); ?></strong></h2>
                       </div>
                     </div>
+                            
+                        </div>
 
                         </div>
                        
