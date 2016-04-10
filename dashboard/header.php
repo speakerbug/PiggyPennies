@@ -60,7 +60,7 @@
               <img src="https://s3-us-west-2.amazonaws.com/piggypennies/images/henry.jpg" alt="..." class="img-circle profile_img">
             </div>
             <div class="profile_info">
-              <span>Welcome,</span>
+              <span>Welcome</span>
               <h2>Henry Saniuk</h2>
             </div>
           </div>
