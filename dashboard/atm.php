@@ -55,7 +55,7 @@
                 x.innerHTML = "<h2>ATMs Near Me</h2>";
                 for (var i = 0; i < data.data.length; i++) {
                     var obj = data.data[i];
-                    x.innerHTML += "<br><strong>" + obj['name'] + "</strong><br>";
+                    x.innerHTML += "<br><strong>" + obj['name'] + "</strong><br>" + obj['address']['street_number'] + " " + obj['address']['street_address'] + "<br>" + obj['address']['city'] + ", " + obj['address']['state'] + " " + obj['address']['zip'] + "<br>";
                 }
             });
         }
