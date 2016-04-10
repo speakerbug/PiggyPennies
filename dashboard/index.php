@@ -94,11 +94,8 @@
                                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                                                         <h4 class="modal-title">Success!</h4>
                                                     </div>
-                                                    <div class="modal-body">
-                                                        <p>You have successfully transferred your rounded up cash to your savings account.</p>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                    <div class="modal-body text-center">
+                                                        <h2>You have successfully transferred your rounded up cash to your savings account.</h2>
                                                     </div>
                                                 </div>
                                             </div>
