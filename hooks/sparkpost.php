@@ -63,7 +63,7 @@ function send_response($message) {
           ],
           "substitution_data" => [
             "name" => "Stuart",
-            "amount" => $amount,
+            "amount" => "$33",
             "goal" => "$500"
           ]
         ]
