@@ -81,6 +81,7 @@
                   </ul>
                 </li>
                 <li><a href="friends.php"><i class="fa fa-users"></i> Friends </span></a></li>
+          <li><a href="atm.php"><i class="fa fa-credit-card"></i> ATM Finder </span></a></li>
               </ul>
             </div>
 
@@ -91,12 +92,6 @@
           <div class="sidebar-footer hidden-small">
             <a data-toggle="tooltip" data-placement="top" title="Settings">
               <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
-            </a>
-            <a data-toggle="tooltip" data-placement="top" title="FullScreen">
-              <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
-            </a>
-            <a data-toggle="tooltip" data-placement="top" title="Lock">
-              <span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
             </a>
             <a data-toggle="tooltip" data-placement="top" title="Logout">
               <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
