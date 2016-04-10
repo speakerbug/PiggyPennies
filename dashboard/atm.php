@@ -14,7 +14,7 @@
 
                             <div class="col-md-12">
                                 
-                                <button class="btn btn-primary" onclick="getLocation()">Find a local ATM</button>
+                                <div id="button"><button class="btn btn-primary" onclick="getLocation()">Find a local ATM</button></div>
 
                                 <p id="demo"></p>
 
@@ -34,6 +34,7 @@
 
     <script>
         var x = document.getElementById("demo");
+        var y = document.getElementById("button");
 
         function getLocation() {
             if (navigator.geolocation) {
@@ -41,9 +42,14 @@
             } else {
                 x.innerHTML = "Geolocation is not supported by this browser.";
             }
+            // Remove button
+            y.innerHTML = "";
         }
 
         function showPosition(position) {
+            $.get("http://api.reimaginebanking.com/atms?lat=" + position.coords.latitude + "&lng=" + position.coords.longitude + "&rad=25&key=c50e2ab66da1e818d92a5884067a17ef", function(data, status){
+        alert("Data: " + data + "\nStatus: " + status);
+            });
             x.innerHTML = "Latitude: " + position.coords.latitude +
                 "<br>Longitude: " + position.coords.longitude;
         }
