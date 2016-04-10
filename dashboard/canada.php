@@ -99,12 +99,6 @@
                   </div>
                   <div class="col-md-9 col-sm-9 col-xs-12">
 
-                    <div class="profile_title">
-                      <div class="col-md-6">
-                        <h2>Savings Report</h2>
-                      </div>
-                    </div>
-
                     <div class="" role="tabpanel" data-example-id="togglable-tabs">
                       <ul id="myTab" class="nav nav-tabs bar_tabs" role="tablist">
                         <li role="presentation" class="active"><a href="#tab_content1" id="home-tab" role="tab" data-toggle="tab" aria-expanded="true">My Contributions</a>
@@ -178,7 +172,7 @@
                             </thead>
                             <tbody>
                               <?php
-                                $lifetime_savings = 0;
+                                $lifetime_savings2 = 0;
                                 $statement = file_get_contents("http://api.reimaginebanking.com/accounts/$sneha/purchases?key=$api_key");
                                 $statement = json_decode($statement, true);
                                 for ($i = count($statement)-1; $i >= 0; $i--) {
@@ -187,7 +181,7 @@
                                     $amount = $statement[$i]['amount'];
                                     $rounded = ceil($statement[$i]['amount']);
                                     $round = $rounded-$amount;
-                                    $lifetime_savings += $round;
+                                    $lifetime_savings2 += $round;
                                     $amount = money_format('$%i', $amount);
                                     $round = money_format('$%i', $round);
                                     
@@ -201,6 +195,7 @@
                                     echo "<td>+$round</td>";
                                     echo "</tr>";
                                 }
+                                $lifetime_savings3 = 0;
                                  $statement = file_get_contents("http://api.reimaginebanking.com/accounts/$stuart/purchases?key=$api_key");
                                 $statement = json_decode($statement, true);
                                 for ($i = count($statement)-1; $i >= 0; $i--) {
@@ -209,7 +204,7 @@
                                     $amount = $statement[$i]['amount'];
                                     $rounded = ceil($statement[$i]['amount']);
                                     $round = $rounded-$amount;
-                                    $lifetime_savings += $round;
+                                    $lifetime_savings3 += $round;
                                     $amount = money_format('$%i', $amount);
                                     $round = money_format('$%i', $round);
                                     
@@ -230,13 +225,23 @@
                             
                             <div class="profile_title">
                       <div class="col-md-6">
-                        <h2>Friends' Total Contributions: <strong>+<?php echo money_format('$%i', $lifetime_savings); ?></strong></h2>
+                        <h2>Friends' Total Contributions: <strong>+<?php echo money_format('$%i', $lifetime_savings2+$lifetime_savings3); ?></strong></h2>
                       </div>
                     </div>
                             
                         </div>
 
                         </div>
+                        
+                        <div class="profile_title">
+                      <div class="col-md-6">
+                        <h2>Savings Report</h2>
+                      </div>
+                    </div>
+                        
+                        <div class="x_content">
+                  <canvas id="pieChart"></canvas>
+                </div>
                        
                       </div>
                     </div>
@@ -250,5 +255,49 @@
       </div>
       <!-- /page content -->
     </div>
+
+<script src="js/bootstrap.min.js"></script>
+  <script src="js/moment/moment.min.js"></script>
+  <script src="js/chartjs/chart.min.js"></script>
+  <script src="js/progressbar/bootstrap-progressbar.min.js"></script>
+  <script src="js/nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="js/icheck/icheck.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="js/pace/pace.min.js"></script>
+
+<script>
+
+    // Pie chart
+    var ctx = document.getElementById("pieChart");
+    var data = {
+      datasets: [{
+        data: [120, 50, 140, 180, 100],
+        backgroundColor: [
+          "#455C73",
+          "#9B59B6",
+          "#BDC3C7",
+          "#26B99A",
+          "#3498DB"
+        ],
+        label: 'My dataset' // for legend
+      }],
+      labels: [
+        "Dark Gray",
+        "Purple",
+        "Gray",
+        "Green",
+        "Blue"
+      ]
+    };
+
+    var pieChart = new Chart(ctx, {
+      data: data,
+      type: 'pie',
+      otpions: {
+        legend: false
+      }
+    });
+
+</script>
 
 <?php include("footer.php"); ?>
