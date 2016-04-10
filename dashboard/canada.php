@@ -19,9 +19,6 @@
                       <!-- end of image cropping -->
                       <div id="crop-avatar">
                         <!-- Current avatar -->
-                        <div class="avatar-view" title="Change the avatar">
-                          <img src="https://s3-us-west-2.amazonaws.com/piggypennies/images/henry-big.jpg" alt="Avatar">
-                        </div>
 
                         <!-- Cropping modal -->
                         <div class="modal fade" id="avatar-modal" aria-hidden="true" aria-labelledby="avatar-modal-label" role="dialog" tabindex="-1">
