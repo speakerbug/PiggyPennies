@@ -99,6 +99,7 @@
                 </li>
                 <li><a href="friends.php"><i class="fa fa-users"></i> Friends </span></a></li>
           <li><a href="atm.php"><i class="fa fa-credit-card"></i> ATM Finder </span></a></li>
+      <li><img src="https://s3-us-west-2.amazonaws.com/piggypennies/images/poweredby.png" width="75%"></li>
               </ul>
             </div>
 
