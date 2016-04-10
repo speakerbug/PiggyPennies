@@ -25,6 +25,13 @@ function send_response($message) {
   $to      = $message["msg_from"];
   $subject = 'Re: ' . $message["content"]["subject"];
 
+  $amount_regex = "/Transfer \$(\d{0,10}(\.\d{0,2})?)/";
+  if (preg_match($amount_regex, $message["content"]["html"], $matches)) {
+    $amount = "$" . $matches[1];
+  } else {
+    $amount = "$20";
+  }
+
   $httpAdapter = new Guzzle6HttpAdapter(new Client());
   $sparky = new SparkPost($httpAdapter, ['key'=>getenv('SPARKPOST_API_KEY')]);
 
@@ -56,7 +63,7 @@ function send_response($message) {
           ],
           "substitution_data" => [
             "name" => "Stuart",
-            "amount" => "$20",
+            "amount" => $amount,
             "goal" => "$500"
           ]
         ]
