@@ -182,18 +182,17 @@
                                     $rounded = ceil($statement[$i]['amount']);
                                     $round = $rounded-$amount;
                                     $lifetime_savings2 += $round;
-                                    $amount = money_format('$%i', $amount);
-                                    $round = money_format('$%i', $round);
                                     
-                                    $merchant_info = file_get_contents("http://api.reimaginebanking.com/merchants/$merchant?key=$api_key");
-                                    $merchant_info = json_decode($merchant_info, true);
-                                    $merchant = $merchant_info['name'];
+                                    if ($round != 0) {
+                                        $amount = money_format('$%i', $amount);
+                                        $round = money_format('$%i', $round);
                                     
-                                    echo "<tr>";
-                                    echo "<td>Sneha Vaswani</td>";
-                                    echo "<td>*****</td>";
-                                    echo "<td>+$round</td>";
-                                    echo "</tr>";
+                                        echo "<tr>";
+                                        echo "<td>Sneha Vaswani</td>";
+                                        echo "<td>*****</td>";
+                                        echo "<td>+$round</td>";
+                                        echo "</tr>";
+                                    }
                                 }
                                 $lifetime_savings3 = 0;
                                  $statement = file_get_contents("http://api.reimaginebanking.com/accounts/$stuart/purchases?key=$api_key");
@@ -205,18 +204,16 @@
                                     $rounded = ceil($statement[$i]['amount']);
                                     $round = $rounded-$amount;
                                     $lifetime_savings3 += $round;
-                                    $amount = money_format('$%i', $amount);
-                                    $round = money_format('$%i', $round);
+                                    if ($round != 0) {
+                                        $amount = money_format('$%i', $amount);
+                                        $round = money_format('$%i', $round);
                                     
-                                    $merchant_info = file_get_contents("http://api.reimaginebanking.com/merchants/$merchant?key=$api_key");
-                                    $merchant_info = json_decode($merchant_info, true);
-                                    $merchant = $merchant_info['name'];
-                                    
-                                    echo "<tr>";
-                                    echo "<td>Stuart Olivera</td>";
-                                    echo "<td>*****</td>";
-                                    echo "<td>+$round</td>";
-                                    echo "</tr>";
+                                        echo "<tr>";
+                                        echo "<td>Stuart Olivera</td>";
+                                        echo "<td>*****</td>";
+                                        echo "<td>+$round</td>";
+                                        echo "</tr>";
+                                    }
                                 }
                                 ?>
                             </tbody>
