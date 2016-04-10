@@ -56,9 +56,15 @@
                                   </div>
 
                                   <div class="row">
-                                    <img src="https://s3-us-west-2.amazonaws.com/piggypennies/images/henry.jpg" alt="..." class="pull-left img-circle spacing-right">
+                                    <img src="https://s3-us-west-2.amazonaws.com/piggypennies/images/tad.png" alt="..." class="pull-left img-circle spacing-right">
                                     <h2 class="sneha-h1">John Smith</h2><br>
                                     <h2>Has saved $47.82</h2>
+                                  </div>
+
+                                  <div class="row">
+                                    <img src="https://s3-us-west-2.amazonaws.com/piggypennies/images/darrin.png" alt="..." class="pull-left img-circle spacing-right">
+                                    <h2 class="sneha-h1">Darrin Loeliger</h2><br>
+                                    <h2>Has saved $7.87</h2>
                                   </div>
                             </div>
                         </div>
