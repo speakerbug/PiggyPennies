@@ -232,7 +232,7 @@
                         </div>
 
                         </div>
-                        
+                        <br><br>
                         <div class="profile_title">
                       <div class="col-md-6">
                         <h2>Savings Report</h2>
@@ -271,22 +271,18 @@
     var ctx = document.getElementById("pieChart");
     var data = {
       datasets: [{
-        data: [120, 50, 140, 180, 100],
+        data: [120, 180, 60],
         backgroundColor: [
           "#455C73",
-          "#9B59B6",
-          "#BDC3C7",
           "#26B99A",
           "#3498DB"
         ],
         label: 'My dataset' // for legend
       }],
       labels: [
-        "Dark Gray",
-        "Purple",
-        "Gray",
-        "Green",
-        "Blue"
+        "Stuart",
+        "Sneha",
+        "Me"
       ]
     };
 
