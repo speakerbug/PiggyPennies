@@ -173,9 +173,69 @@
                           <!-- end user projects -->
                             
                             </div>
-                        <div role="tabpanel" class="tab-pane fade" id="tab_content3" aria-labelledby="profile-tab">
-                          <p>xxFood truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui
-                            photo booth letterpress, commodo enim craft beer mlkshk </p>
+                        <div role="tabpanel" class="tab-pane fade" id="tab_content2" aria-labelledby="profile-tab">
+                         
+                             <!-- start user projects -->
+                          <table class="data table table-striped no-margin">
+                            <thead>
+                              <tr>
+                                <th>Friend</th>
+                                <th>Price</th>
+                                <th>Savings</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <?php
+                                $statement = file_get_contents("http://api.reimaginebanking.com/accounts/$sneha/purchases?key=$api_key");
+                                $statement = json_decode($statement, true);
+                                for ($i = count($statement)-1; $i >= 0; $i--) {
+                                    
+                                    $merchant = $statement[$i]['merchant_id'];
+                                    $amount = $statement[$i]['amount'];
+                                    $rounded = ceil($statement[$i]['amount']);
+                                    $round = $rounded-$amount;
+                                    $lifetime_savings += $round;
+                                    $amount = money_format('$%i', $amount);
+                                    $round = money_format('$%i', $round);
+                                    
+                                    $merchant_info = file_get_contents("http://api.reimaginebanking.com/merchants/$merchant?key=$api_key");
+                                    $merchant_info = json_decode($merchant_info, true);
+                                    $merchant = $merchant_info['name'];
+                                    
+                                    echo "<tr>";
+                                    echo "<td>Sneha Vaswani</td>";
+                                    echo "<td>*****</td>";
+                                    echo "<td>+$round</td>";
+                                    echo "</tr>";
+                                }
+                                 $statement = file_get_contents("http://api.reimaginebanking.com/accounts/$stuart/purchases?key=$api_key");
+                                $statement = json_decode($statement, true);
+                                for ($i = count($statement)-1; $i >= 0; $i--) {
+                                    
+                                    $merchant = $statement[$i]['merchant_id'];
+                                    $amount = $statement[$i]['amount'];
+                                    $rounded = ceil($statement[$i]['amount']);
+                                    $round = $rounded-$amount;
+                                    $lifetime_savings += $round;
+                                    $amount = money_format('$%i', $amount);
+                                    $round = money_format('$%i', $round);
+                                    
+                                    $merchant_info = file_get_contents("http://api.reimaginebanking.com/merchants/$merchant?key=$api_key");
+                                    $merchant_info = json_decode($merchant_info, true);
+                                    $merchant = $merchant_info['name'];
+                                    
+                                    echo "<tr>";
+                                    echo "<td>Stuart Olivera</td>";
+                                    echo "<td>*****</td>";
+                                    echo "<td>+$round</td>";
+                                    echo "</tr>";
+                                }
+                                ?>
+                            </tbody>
+                          </table>
+                          <!-- end user projects -->
+                            
+                            
                         </div>
                       
                       <div class="profile_title">
