@@ -13,8 +13,10 @@
                         <div class="x_content">
 
                             <div class="col-md-12">
-                                
-                                <div id="button"><button class="btn btn-primary" onclick="getLocation()">Find a local ATM</button></div>
+
+                                <div id="button">
+                                    <button class="btn btn-primary" onclick="getLocation()">Find a local ATM</button>
+                                </div>
 
                                 <p id="demo"></p>
 
@@ -48,10 +50,13 @@
         }
 
         function showPosition(position) {
-            $.get("http://api.reimaginebanking.com/atms?lat=" + position.coords.latitude + "&lng=" + position.coords.longitude + "&rad=25&key=c50e2ab66da1e818d92a5884067a17ef", function(data, status){
-        alert("Data: " + data + "\nStatus: " + status);
-                 x.innerHTML = "Latitude: " + position.coords.latitude +
-                "<br>Longitude: " + position.coords.longitude;
+            $.get("http://api.reimaginebanking.com/atms?lat=" + position.coords.latitude + "&lng=" + position.coords.longitude + "&rad=25&key=c50e2ab66da1e818d92a5884067a17ef", function (data, status) {
+                alert("Data: " + data + "\nStatus: " + status);
+                x.innerHTML = "<h2>ATMs Near Me</h2>";
+                for (var i = 0; i < data.length; i++) {
+                    var obj = data[i];
+                    x.innerHTML += "<br><strong>" + data[i]['name'] + "</strong><br>";
+                }
             });
         }
     </script>
