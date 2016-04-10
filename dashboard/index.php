@@ -122,6 +122,7 @@
                     <div class="profile_title">
                       <div class="col-md-6">
                         <h2>Recent Activity</h2>
+                          <a class="btn btn-success pull-right"><i class="fa fa-edit m-right-xs"></i>Transfer to Savings</a>
                       </div>
                     </div>
 
